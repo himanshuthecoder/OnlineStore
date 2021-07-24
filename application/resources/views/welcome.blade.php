@@ -26,8 +26,7 @@
                             <div class="control">
                                 <a href="#" class="button button-cta primary-btn raised">Get Started</a>
                             </div>
-                        </div>
-                        <span class="form-text">14 day trial, no credit card required.</span>
+                        </div>                        
                     </div>
 
                 </div>
@@ -38,23 +37,12 @@
 
     <div class="section is-medium">
         <div class="container">
-
-            <!--Clients-->
-            <div class="tabs is-centered ref-tabs">
-                <ul>
-                    <li><a><img src="assets/img/logos/custom/gutwork.svg" alt=""></a></li>
-                    <li><a><img src="assets/img/logos/custom/kromo.svg" alt=""></a></li>
-                    <li><a><img src="assets/img/logos/custom/infinite.svg" alt=""></a></li>
-                    <li><a><img src="assets/img/logos/custom/covenant.svg" alt=""></a></li>
-                    <li><a><img src="assets/img/logos/custom/tribe.svg" alt=""></a></li>
-                </ul>
-            </div>
-
+            
             <!--Section title-->
             <div class="section-title has-text-centered">
                 <div class="title-wrap">
                     <h3 class="title title-alt is-3">Made for every business</h3>
-                    <p class="subtitle is-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <p class="subtitle is-5">You have things to sell we have space</p>
                 </div>
             </div>
 
@@ -167,8 +155,8 @@
                     <p><i class="fa fa-quote-left"></i>We created this solution to make it easy for everyone to create an
                         online store in a matter of minutes. No coding knowledge required. Just hop in and we'll guide you
                         through.<i class="fa fa-quote-right"></i></p>
-                    <span>Hellen Miller</span>
-                    <span>Head of Product Quality</span>
+                    <span>Himanshu Sharma</span>
+                    <span>Creator</span>
                 </div>
             </div>
         </div>
@@ -176,42 +164,7 @@
 
     <!--Themes section-->
     <div class="section is-medium is-grey">
-        <div class="container">
-            <!--Title-->
-            <div class="section-title is-flex">
-                <div class="title-wrap">
-                    <h3 class="title title-alt is-3">Start with a Theme</h3>
-                    <p class="subtitle is-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </div>
-                <div class="actions">
-                    <div class="link-wrap">
-                        <a>View more Themes</a>
-                    </div>
-                </div>
-            </div>
-
-            <!--Themes-->
-            <div class="columns is-multiline theme-list">
-                <div class="column is-4">
-                    <a><img class="theme-preview" src="assets/img/graphics/legacy/t-1.jpg" alt=""></a>
-                </div>
-                <div class="column is-4">
-                    <a><img class="theme-preview" src="assets/img/graphics/legacy/t-2.jpg" alt=""></a>
-                </div>
-                <div class="column is-4">
-                    <a><img class="theme-preview" src="assets/img/graphics/legacy/t-3.jpg" alt=""></a>
-                </div>
-                <div class="column is-4">
-                    <a><img class="theme-preview" src="assets/img/graphics/legacy/t-4.jpg" alt=""></a>
-                </div>
-                <div class="column is-4">
-                    <a><img class="theme-preview" src="assets/img/graphics/legacy/t-5.jpg" alt=""></a>
-                </div>
-                <div class="column is-4">
-                    <a><img class="theme-preview" src="assets/img/graphics/legacy/t-6.jpg" alt=""></a>
-                </div>
-            </div>
-
+        <div class="container">            
             <div class="columns is-vcentered theme-features">
                 <div class="column is-4">
                     <!-- Side icon box -->
@@ -221,8 +174,7 @@
                         </div>
                         <div class="dark-text has-text-left ml-30">
                             <h5 class="text-bold">Get Started</h5>
-                            <p>Lorem ipsum dolor sit amet, ea vis numquam vivendo, voluptua argumentum an pri. Duo illud
-                                consequat in, eum eu veri ipsum oporteat.</p>
+                            <p>Just Register Your self and create a shop with your choice of name.</p>
                         </div>
                     </div>
                 </div>
@@ -233,9 +185,8 @@
                             <i class="im im-icon-Clothing-Store is-size-2 color-primary"></i>
                         </div>
                         <div class="dark-text has-text-left ml-30">
-                            <h5 class="text-bold">Pick a Template</h5>
-                            <p>Lorem ipsum dolor sit amet, ea vis numquam vivendo, voluptua argumentum an pri. Duo illud
-                                consequat in, eum eu veri ipsum oporteat.</p>
+                            <h5 class="text-bold">Add Your Products</h5>
+                            <p>Once All setup is done, Start Adding Products in different categories and That's It.</p>
                         </div>
                     </div>
                 </div>
@@ -246,9 +197,8 @@
                             <i class="im im-icon-Gear is-size-2 color-primary"></i>
                         </div>
                         <div class="dark-text has-text-left ml-30">
-                            <h5 class="text-bold">Customize</h5>
-                            <p>Lorem ipsum dolor sit amet, ea vis numquam vivendo, voluptua argumentum an pri. Duo illud
-                                consequat in, eum eu veri ipsum oporteat.</p>
+                            <h5 class="text-bold">Interact</h5>
+                            <p>After Uploading Products detail you are ready now just sit back and interact with your customers on whatsup or call</p>
                         </div>
                     </div>
                 </div>
@@ -256,8 +206,8 @@
 
             <div class="section-cta has-text-centered">
 
-                <a href="#" class="button button-cta primary-btn raised">Start my Free Trial</a>
-                <p>No credit card required.</p>
+                <a href="#" class="button button-cta primary-btn raised">Create Shop Online</a>
+                <p>It's All free to use</p>
             </div>
         </div>
     </div>
@@ -390,6 +340,7 @@
         </div>
     </div>
 
+    {{-- <!-- Customer Reviews Later Use -->
     <div class="section is-medium">
         <div class="container">
             <div class="section-title has-text-centered">
@@ -519,6 +470,7 @@
 
         </div>
     </div>
+    --}}
 
     <!--Suppport Section-->
     <div class="section-wrap">
@@ -531,9 +483,7 @@
                 </div>
 
                 <div class="support-features">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quid est enim aliud esse versutum? Eadem
-                        nunc mea adversum te oratio est. Utilitatis causa amicitia est quaesita. Hoc non est positum in
-                        nostra actione.</p>
+                    <p>You have any query feel free to contact</p>
 
                     <div class="columns is-multiline">
                         <div class="column is-6">
@@ -572,73 +522,7 @@
         <div class="right has-background-image" data-background="https://via.placeholder.com/1920x1280" data-demo-background="/assets/img/demo/section.jpg"></div>
     </div>
 
-    <div id="pricing" class="section is-medium">
-        <div class="container">
-            <div class="section-title has-text-centered">
-                <div class="title-wrap">
-                    <h3 class="title title-alt is-3">Available Plans</h3>
-                    <p class="subtitle is-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </div>
-            </div>
-
-            <div class="pricing-wrapper">
-                <div class="columns">
-                    <div class="column is-4">
-                        <div class="pricing-box">
-                            <img src="assets/img/graphics/icons/ecommerce-pricing-icon-1-core.svg" data-base-url="assets/img/graphics/icons/ecommerce-pricing-icon-1" data-extension=".svg" alt="">
-                            <h3>Shop</h3>
-                            <p>For starter projects</p>
-                            <div class="price">
-                                <div class="price-number">
-                                    <span>$12</span>
-                                </div>
-                            </div>
-                            <p>Up to 250 products</p>
-                            <a class="button primary-btn raised is-fullwidth">Try it free</a>
-                        </div>
-                    </div>
-                    <div class="column is-4">
-                        <div class="pricing-box">
-                            <img src="assets/img/graphics/icons/ecommerce-pricing-icon-2-core.svg" data-base-url="assets/img/graphics/icons/ecommerce-pricing-icon-2" data-extension=".svg" alt="">
-                            <h3>Store</h3>
-                            <p>For established stores</p>
-                            <div class="price">
-                                <div class="price-number">
-                                    <span>$25</span>
-                                </div>
-                            </div>
-                            <p>Up to 2000 products</p>
-                            <a class="button primary-btn raised is-fullwidth">Try it free</a>
-                        </div>
-                    </div>
-                    <div class="column is-4">
-                        <div class="pricing-box">
-                            <img src="assets/img/graphics/icons/ecommerce-pricing-icon-3-core.svg" data-base-url="assets/img/graphics/icons/ecommerce-pricing-icon-3" data-extension=".svg" alt="">
-                            <h3>Flagship</h3>
-                            <p>For bigger stores</p>
-                            <div class="price">
-                                <div class="price-number">
-                                    <span>$55</span>
-                                </div>
-                            </div>
-                            <p>Unlimited products</p>
-                            <a class="button primary-btn raised is-fullwidth">Try it free</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="tabs is-centered ref-tabs">
-                <ul>
-                    <li><a><img src="assets/img/logos/custom/gutwork.svg" alt=""></a></li>
-                    <li><a><img src="assets/img/logos/custom/kromo.svg" alt=""></a></li>
-                    <li><a><img src="assets/img/logos/custom/infinite.svg" alt=""></a></li>
-                    <li><a><img src="assets/img/logos/custom/covenant.svg" alt=""></a></li>
-                    <li><a><img src="assets/img/logos/custom/tribe.svg" alt=""></a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
+    
 
 
 @include('layouts.footer')

@@ -24,7 +24,7 @@ class User extends Controller
      */
     public function index()
     {
-        return view('user/index');
+        return view('user.index');
     }
 
     public function show($page)

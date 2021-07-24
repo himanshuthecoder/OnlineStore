@@ -10,7 +10,7 @@
             </div>
             <div class="head-action">
                 <div class="buttons">
-                    <a class="button primary-btn raised action-button">Try it free</a>
+                    <a class="button primary-btn raised action-button">Create Account</a>
                     <a class="button chat-button">Chat with us</a>
                 </div>
             </div>
@@ -21,13 +21,11 @@
                 <div class="pt-10 pb-10">
                     <img class="small-footer-logo" src="{{ asset('assets/img/logos/bulkit-logo-g.png')}}" alt="">
                     <div class="footer-description">
-                        Bulkit is built for developers and designers. It's modular approach lets you create an original
-                        landing page for your brand.
+                        OnlineStore is Built for Users who want to sell their products online. It's a modular approach to get more customers from anywhere.
                     </div>
                 </div>
                 <div>
-                    <span class="moto">Designed and coded with <i class="fa fa-heart color-red"></i> by CSS
-                        Ninja.</span>
+                    <span class="moto">Designed and coded with <i class="fa fa-heart color-red"></i> by Himanshu Sharma </span>
                     <div class="social-links">
                         <a href="#">
                             <span class="icon"><i class="fa fa-facebook"></i></span>
@@ -54,10 +52,10 @@
                     <div class="column">
                         <ul class="footer-column">
                             <li class="column-header">
-                                Bulkit
+                                OnlineStore
                             </li>
                             <li class="column-item"><a href="#">Home</a></li>
-                            <li class="column-item"><a href="#">Pricing</a></li>
+                            <li class="column-item"><a href="#">Explore</a></li>
                             <li class="column-item"><a href="#">Get started</a></li>
                             <li class="column-item"><a href="#">Help</a></li>
                         </ul>
@@ -68,8 +66,8 @@
                             <li class="column-header">
                                 Ressources
                             </li>
-                            <li class="column-item"><a href="#">Learning</a></li>
-                            <li class="column-item"><a href="#">Support center</a></li>
+                            <li class="column-item"><a href="#">About</a></li>
+                            <li class="column-item"><a href="#">Customer Support</a></li>
                             <li class="column-item"><a href="#">Frequent questions</a></li>
                             <li class="column-item"><a href="#">Schedule a demo</a></li>
                         </ul>
@@ -82,14 +80,13 @@
                             </li>
                             <li class="column-item"><a href="#">Terms of Service</a></li>
                             <li class="column-item"><a href="#">Privacy policy</a></li>
-                            <li class="column-item"><a href="#">SaaS services</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
         <div class="footer-copyright has-text-centered">
-            <p>&copy; 2019-2020 | <a href="https://cssninja.io">Css Ninja</a> | All Rights Reserved.</p>
+            <p>&copy; 2021 | <a href="#">Himanshu Sharma</a> | All Rights Reserved.</p>
         </div>
     </div>
 </footer>

@@ -1,33 +1,22 @@
 
-<div class="container-fluid">
-<!-- Page-Title -->
-<div class="row">
-    <div class="col-sm-12">
-        <div class="page-title-box">
-            <div class="row">
-                <div class="col">
-                    <h4 class="page-title">Stores</h4>
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="javascript:void(0);">Dastone</a></li>
-                        <li class="breadcrumb-item"><a href="javascript:void(0);">Pages</a></li>
-                        <li class="breadcrumb-item active">Starer</li>
-                    </ol>
-                </div><!--end col-->
-                <div class="col-auto align-self-center">
-                    <a href="#" class="btn btn-sm btn-outline-primary" id="Dash_Date">
-                        <span class="day-name" id="Day_Name">Today:</span>&nbsp;
-                        <span class="" id="Select_date">Jan 11</span>
-                        <i data-feather="calendar" class="align-self-center icon-xs ml-1"></i>
-                    </a>
-                    <a href="#" class="btn btn-sm btn-outline-primary">
-                        <i data-feather="download" class="align-self-center icon-xs"></i>
-                    </a>
-                </div><!--end col-->  
-            </div><!--end row-->                                                              
-        </div><!--end page-title-box-->
-    </div><!--end col-->
-</div><!--end row-->
-<!-- end page title end breadcrumb -->
+<div class="wrapper">
+
+<div class="pageheader pd-t-25 pd-b-35">
+ <div class="d-flex justify-content-between">
+    <div class="clearfix">
+       <div class="pd-t-5 pd-b-5">
+          <h1 class="pd-0 mg-0 tx-20 tx-dark">Stores</h1>
+       </div>
+       <div class="breadcrumb pd-0 mg-0">
+          <a class="breadcrumb-item" href="javascript:void(0);"><i class="icon ion-ios-home-outline"></i> StoreName</a>
+          <a class="breadcrumb-item" href="">Stores</a>          
+       </div>
+    </div>
+ </div>
+</div>
+
 
 
 </div><!-- container -->
+
+
