@@ -63,16 +63,21 @@ function menuaction(pageurl,data){
     ajaxcall(url,data,'GET','appcontent');   
 }
 
-function ajaxcall(pageurl,data,type,responsediv){
+function ajaxcall(pageurl,data,type,responsediv,callback){
+    
     
     $.ajax({
         type: type,
         url: pageurl,
         data: data,
-        success: function(res) {
-            $('#'+responsediv).html(res);
+        success: function(res) {              
+            $('#'+responsediv).html(res);            
+            callback(res);
         }
-    })    
+    });
+
+
+
 }
 
 function notify(title,msg)
@@ -91,21 +96,21 @@ function notify(title,msg)
             }
           });
 
-    if(title=='Success')
+    if(title=='success')
     {
       Toast.fire({
         icon: 'success',
         title: msg
       })
     }
-    if(title=='Error')
+    if(title=='error')
     {
       Toast.fire({
         icon: 'error',
         title: msg
       })
     }
-    if(title=='Notification')
+    if(title=='notification')
     {
       Toast.fire({
         icon: 'info',
@@ -113,7 +118,7 @@ function notify(title,msg)
       })
 
     }
-    if(title=='Warning')
+    if(title=='warning')
     {
       Toast.fire({
         icon: 'warning',

@@ -1,28 +1,27 @@
 <?php
 $baseurl=url('/');
+$theme_sidebar=(Request::has('theme'))?Request::get('theme'):0; // 0,1,2
 
+$dark_global_theme=(Request::has('darktheme'))?true:false;; // true false
 ?>
-<!--================================-->
-<!-- Page Sidebar Start -->
-<!--================================-->
-<div class="page-sidebar">
-    <div class="logo">
-       <a class="logo-img" href="index.html">       
-       <img class="desktop-logo" src="{{$baseurl}}/avesta/images/logo.png" alt="">
-       <img class="small-logo" src="{{$baseurl}}/avesta/images/small-logo.png" alt="">
-       </a>         
-       <a id="sidebar-toggle-button-close"><i class="wd-20" data-feather="x"></i> </a>
+<!-- Left Sidenav -->
+<div class="left-sidenav">
+    <!-- LOGO -->
+    <div class="brand">
+        <a href="index.html" class="logo">
+            <span>
+                <img src="logo/logo.png" alt="logo-small" style="height: 50px;margin-top: 8px;" class="logo-sm">
+            </span>
+            <span>
+                <img src="logo/logo.png" alt="logo-large" class="logo-lg logo-light">                
+            </span>
+        </a>
     </div>
-    <!--================================-->
-    <!-- Sidebar Menu Start -->
-    <!--================================-->
-    <div class="page-sidebar-inner">
-       <div class="page-sidebar-menu">
-          <ul class="accordion-menu">
-             <!-- <li class="mg-l-20-force mg-t-25-force menu-navigation">Navigation</li> -->
-
-             <li class="active mg-t-25-force">
-                <a href="javascript: void(0);"  onclick="menuaction('dashboard')"> <i data-feather="home" class="align-self-center menu-icon"></i><span>Dashboard</span></a>                
+    <!--end logo-->
+    <div class="menu-content h-100" data-simplebar>
+        <ul class="metismenu left-sidenav-menu">            
+            <li>
+                <a href="javascript: void(0);" onclick="menuaction('dashboard')"> <i data-feather="home" class="align-self-center menu-icon"></i><span>Dashboard</span></a>                
             </li>
 
             <li>
@@ -34,45 +33,26 @@ $baseurl=url('/');
                 
             </li> 
 
-            <li class="mg-l-20-force mg-t-25-force menu-navigation">Components & Uses</li>
+            <hr class="hr-dashed hr-menu" >
+            <li class="menu-label my-2">Components & Uses</li>
 
             <li>
                 <a href="javascript: void(0);" onclick="menuaction('help')"><i data-feather="box" class="align-self-center menu-icon"></i><span>Help</span></a>
             </li>
+        </ul>
 
-             <!-- <li class="open active">
-                <a href=""><i data-feather="home"></i>
-                <span>Dashboard</span><i class="accordion-icon fa fa-angle-left"></i></a>
-                <ul class="sub-menu" style="display: block;">
-                   
-                   <li class="active"><a href="index.html">Sales</a></li>
-                   <li><a href="index2.html">Analytics</a></li>
-                   <li><a href="index3.html">Cryptocurrency</a></li>
-                   <li><a href="index4.html">Helpdesk</a></li>
-                   <li><a href="index5.html">Project</a></li>
-                </ul>
-             </li> -->
-          </ul>
-       </div>
+        <!-- google ads -->
+        <!-- <div class="update-msg text-center">
+            <a href="javascript: void(0);" class="float-right close-btn text-muted" data-dismiss="update-msg" aria-label="Close" aria-hidden="true">
+                <i class="mdi mdi-close"></i>
+            </a>
+            <h5 class="mt-3">Mannat Themes</h5>
+            <p class="mb-3">We Design and Develop Clean and High Quality Web Applications</p>
+            <a href="javascript: void(0);" class="btn btn-outline-warning btn-sm">Upgrade your plan</a>
+        </div> -->
     </div>
-    <!--/ Sidebar Menu End -->
-    <!--================================-->
-    <!-- Sidebar Footer Start -->
-    <!--================================-->
-    <div class="sidebar-footer">                                    
-       <a class="pull-left" href="pages-profile.html" data-toggle="tooltip" data-placement="top" data-original-title="Profile">
-       <i data-feather="user" class="wd-16"></i></a>                                    
-       <a class="pull-left " href="mailbox.html" data-toggle="tooltip" data-placement="top" data-original-title="Mailbox">
-       <i data-feather="mail" class="wd-16"></i></a>
-       <a class="pull-left" href="aut-unlock.html" data-toggle="tooltip" data-placement="top" data-original-title="Lockscreen">
-       <i data-feather="lock" class="wd-16"></i></a>
-       <a class="pull-left" href="aut-signin.html" data-toggle="tooltip" data-placement="top" data-original-title="Sing Out">
-       <i data-feather="log-out" class="wd-16"></i></a>
-    </div>
-    <!--/ Sidebar Footer End -->
 </div>
- <!--/ Page Sidebar End -->
- <!--================================-->
+<!-- end left-sidenav-->
 
 <script type="text/javascript">
 
@@ -82,16 +62,23 @@ function menuaction(pageurl,data){
     ajaxcall(url,data,'GET','appcontent');   
 }
 
-function ajaxcall(pageurl,data,type,responsediv){
+function ajaxcall(pageurl,data,type,responsediv,callback){
+    
     
     $.ajax({
         type: type,
         url: pageurl,
-        data: data,
-        success: function(res) {
-            $('#'+responsediv).html(res);
+        data: data,        
+        success: function(res) {              
+            $('#'+responsediv).html(res);            
+            callback(res);
         }
-    })    
+        
+        
+    });
+
+
+
 }
 
 function notify(title,msg)
@@ -110,21 +97,21 @@ function notify(title,msg)
             }
           });
 
-    if(title=='Success')
+    if(title=='success')
     {
       Toast.fire({
         icon: 'success',
         title: msg
       })
     }
-    if(title=='Error')
+    if(title=='error')
     {
       Toast.fire({
         icon: 'error',
         title: msg
       })
     }
-    if(title=='Notification')
+    if(title=='notification')
     {
       Toast.fire({
         icon: 'info',
@@ -132,7 +119,7 @@ function notify(title,msg)
       })
 
     }
-    if(title=='Warning')
+    if(title=='warning')
     {
       Toast.fire({
         icon: 'warning',

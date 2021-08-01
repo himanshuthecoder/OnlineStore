@@ -1,8 +1,11 @@
+<style type="text/css">
+  .navbar-item img{max-height: none;}  
+</style>
 <nav class="navbar navbar-wrapper navbar-default navbar-fade is-fixed-top is-transparent">
     <div class="container">
         <div class="navbar-brand">
             <a class="navbar-item" href="/">
-                <img class="switcher-logo" src="assets/img/logos/logo/bulkit-core.svg" alt="" />
+                <img class="switcher-logo" style="height: 50px !important;" src="logo/logo.png" alt="" />
             </a>
 
             <!-- Sidebar Trigger -->

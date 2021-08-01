@@ -3,314 +3,147 @@ $baseurl=url('/');
 $user=Auth::user();
 ?>
 
-<!-- Page Header Start -->
-<!--================================-->
-<div class="page-header">
-   <div class="search-form">
-      <form action="#" method="GET">
-         <div class="input-group">
-            <input class="form-control search-input typeahead" name="search" placeholder="Type something..." type="text"/>
-            <span class="input-group-btn"><span id="close-search"><i data-feather="x" class="wd-16"></i></span></span>
-         </div>
-      </form>
-   </div>
-   <nav class="navbar navbar-default">
-      <!--================================-->
-      <!-- Brand and Logo Start -->
-      <!--================================-->
-      <div class="navbar-header">
-         <div class="navbar-brand">
-            <ul class="list-inline">
-               <!-- Mobile Toggle and Logo -->
-               <li class="list-inline-item"><a class="hidden-md hidden-lg" href="#" id="sidebar-toggle-button"><i data-feather="menu" class="wd-20"></i></a></li>
-               <!-- PC Toggle and Logo -->
-               <li class="list-inline-item"><a class=" hidden-xs hidden-sm" href="#" id="collapsed-sidebar-toggle-button"><i data-feather="menu" class="wd-20"></i></a></li>
-               <li class="list-inline-item mg-l-10"><a  href="#" id="search-button"><i data-feather="search" class="wd-20"></i></a></li>
-            </ul>
-         </div>
-      </div>
-      <!--/ Brand and Logo End -->
-      <!--================================-->
-      <!-- Header Right Start -->
-      <!--================================-->
-      <div class="header-right pull-right">
-         <ul class="list-inline justify-content-end">            
-            @if(false)
-            <!-- Notifications Dropdown Start -->
-            <!--================================-->
-            <li class="list-inline-item dropdown hidden-xs ">
-               <a class=" notification-icon" href="" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-               <i data-feather="bell" class="wd-20"></i>
-               <span class="notification-count wave in"></span>
-               </a>
-               <div class="dropdown-menu dropdown-menu-right">
-                  <!-- Top Notifications Area -->
-                  <div class="top-notifications-area">
-                     <!-- Heading -->
-                     <div class="notifications-heading">
-                        <div class="heading-title">
-                           <h6>Notifications</h6>
-                        </div>
-                        <span>5+ New Notifications</span>
-                     </div>
-                     <div class="notifications-box" id="notificationsBox">
-                        <a class="dropdown-item list-group-item" href="">
-                           <div class="d-flex justify-content-between">
-                              <div class="wd-35 ht-35 mg-r-10 d-flex align-items-center justify-content-center rounded-circle card-icon-success">
-                                 <i data-feather="smile" class="wd-20"></i>
-                              </div>
-                           </div>
-                           <div class="wd-100p">
-                              <div class="d-flex justify-content-between">
-                                 <h3 class="tx-13 tx-semibold mb-0">Your order is placed</h3>
-                                 <span class="small tx-gray-500 ft-right">Mar 15, 12:32pm</span>
-                              </div>
-                              <div class="tx-gray-700">System reboot has been successfully completed</div>
-                           </div>
-                        </a>
-                        <a class="dropdown-item list-group-item" href="">
-                           <div class="d-flex justify-content-between">
-                              <div class="wd-35 ht-35 mg-r-10 d-flex align-items-center justify-content-center rounded-circle card-icon-warning">
-                                 <i data-feather="bell" class="wd-20"></i>
-                              </div>
-                           </div>
-                           <div class="wd-100p">
-                              <div class="d-flex justify-content-between">
-                                 <h3 class="tx-13 tx-semibold mb-0">Document available</h3>
-                                 <span class="small tx-gray-500 ft-right">Mar 15, 12:32pm</span>
-                              </div>
-                              <div class="tx-gray-700">New user feedback received</div>
-                           </div>
-                        </a>
-                        <a class="dropdown-item list-group-item" href="">
-                           <div class="d-flex justify-content-between">
-                              <div class="wd-35 ht-35 mg-r-10 d-flex align-items-center justify-content-center rounded-circle card-icon-success">
-                                 <i data-feather="check-circle" class="wd-20"></i>
-                              </div>
-                           </div>
-                           <div class="wd-100p">
-                              <div class="d-flex justify-content-between">
-                                 <h3 class="tx-13 tx-semibold mb-0">Payment failed!</h3>
-                                 <span class="small tx-gray-500 ft-right">Mar 15, 12:32pm</span>
-                              </div>
-                              <div class="tx-gray-700">New file has been uploaded</div>
-                           </div>
-                        </a>
-                        <a class="dropdown-item list-group-item" href="">
-                           <div class="d-flex justify-content-between">
-                              <div class="wd-35 ht-35 mg-r-10 d-flex align-items-center justify-content-center rounded-circle card-icon-primary">
-                                 <i data-feather="info" class="wd-20"></i>
-                              </div>
-                           </div>
-                           <div class="wd-100p">
-                              <div class="d-flex justify-content-between">
-                                 <h3 class="tx-13 tx-semibold mb-0">Document available</h3>
-                                 <span class="small tx-gray-500 ft-right">Mar 15, 12:32pm</span>
-                              </div>
-                              <div class="tx-gray-700">New order has been received</div>
-                           </div>
-                        </a>
-                        <a class="dropdown-item list-group-item" href="">
-                           <div class="d-flex justify-content-between">
-                              <div class="wd-35 ht-35 mg-r-10 d-flex align-items-center justify-content-center rounded-circle card-icon-primary">
-                                 <i data-feather="info" class="wd-20"></i>
-                              </div>
-                           </div>
-                           <div class="wd-100p">
-                              <div class="d-flex justify-content-between">
-                                 <h3 class="tx-13 tx-semibold mb-0">New order available</h3>
-                                 <span class="small tx-gray-500 ft-right">Mar 15, 12:32pm</span>
-                              </div>
-                              <div class="tx-gray-700">New order has been received</div>
-                           </div>
-                        </a>
-                        <a class="dropdown-item list-group-item" href="">
-                           <div class="d-flex justify-content-between">
-                              <div class="wd-35 ht-35 mg-r-10 d-flex align-items-center justify-content-center rounded-circle card-icon-success">
-                                 <i data-feather="smile" class="wd-20"></i>
-                              </div>
-                           </div>
-                           <div class="wd-100p">
-                              <div class="d-flex justify-content-between">
-                                 <h3 class="tx-13 tx-semibold mb-0">Your order is placed</h3>
-                                 <span class="small tx-gray-500 ft-right">Mar 15, 12:32pm</span>
-                              </div>
-                              <div class="tx-gray-700">System reboot has been successfully completed</div>
-                           </div>
-                        </a>
-                        <a class="dropdown-item list-group-item" href="">
-                           <div class="d-flex justify-content-between">
-                              <div class="wd-35 ht-35 mg-r-10 d-flex align-items-center justify-content-center rounded-circle card-icon-warning">
-                                 <i data-feather="bell" class="wd-20"></i>
-                              </div>
-                           </div>
-                           <div class="wd-100p">
-                              <div class="d-flex justify-content-between">
-                                 <h3 class="tx-13 tx-semibold mb-0">Document available</h3>
-                                 <span class="small tx-gray-500 ft-right">Mar 15, 12:32pm</span>
-                              </div>
-                              <div class="tx-gray-700">New user feedback received</div>
-                           </div>
-                        </a>
-                     </div>
-                     <div class="notifications-footer">
-                        <a href="">View all Notifications</a>
-                     </div>
-                  </div>
-               </div>
+<!-- Top Bar Start -->
+<div class="topbar">            
+    <!-- Navbar -->
+    <nav class="navbar-custom">    
+        <ul class="list-unstyled topbar-nav float-right mb-0">  
+            
+            <!-- Future uses -->
+            {{--<li class="dropdown hide-phone">
+                <a class="nav-link dropdown-toggle arrow-none waves-light waves-effect" data-toggle="dropdown" href="#" role="button"
+                    aria-haspopup="false" aria-expanded="false">
+                    <i data-feather="search" class="topbar-icon"></i>
+                </a>
+                
+                <div class="dropdown-menu dropdown-menu-right dropdown-lg p-0">
+                    <!-- Top Search Bar -->
+                    <div class="app-search-topbar">
+                        <form action="#" method="get">
+                            <input type="search" name="search" class="from-control top-search mb-0" placeholder="Type text...">
+                            <button type="submit"><i class="ti-search"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </li>                      
+
+            <li class="dropdown notification-list">
+                <a class="nav-link dropdown-toggle arrow-none waves-light waves-effect" data-toggle="dropdown" href="#" role="button"
+                    aria-haspopup="false" aria-expanded="false">
+                    <i data-feather="bell" class="align-self-center topbar-icon"></i>
+                    <span class="badge badge-danger badge-pill noti-icon-badge">2</span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right dropdown-lg pt-0">
+                
+                    <h6 class="dropdown-item-text font-15 m-0 py-3 border-bottom d-flex justify-content-between align-items-center">
+                        Notifications <span class="badge badge-primary badge-pill">2</span>
+                    </h6> 
+                    <div class="notification-menu" data-simplebar>
+                        <!-- item-->
+                        <a href="#" class="dropdown-item py-3">
+                            <small class="float-right text-muted pl-2">2 min ago</small>
+                            <div class="media">
+                                <div class="avatar-md bg-soft-primary">
+                                    <i data-feather="shopping-cart" class="align-self-center icon-xs"></i>
+                                </div>
+                                <div class="media-body align-self-center ml-2 text-truncate">
+                                    <h6 class="my-0 font-weight-normal text-dark">Your order is placed</h6>
+                                    <small class="text-muted mb-0">Dummy text of the printing and industry.</small>
+                                </div><!--end media-body-->
+                            </div><!--end media-->
+                        </a><!--end-item-->
+                        <!-- item-->
+                        <a href="#" class="dropdown-item py-3">
+                            <small class="float-right text-muted pl-2">10 min ago</small>
+                            <div class="media">
+                                <div class="avatar-md bg-soft-primary">
+                                    <img src="dastone/images/users/user-4.jpg" alt="" class="thumb-sm rounded-circle">
+                                </div>
+                                <div class="media-body align-self-center ml-2 text-truncate">
+                                    <h6 class="my-0 font-weight-normal text-dark">Meeting with designers</h6>
+                                    <small class="text-muted mb-0">It is a long established fact that a reader.</small>
+                                </div><!--end media-body-->
+                            </div><!--end media-->
+                        </a><!--end-item-->
+                        <!-- item-->
+                        <a href="#" class="dropdown-item py-3">
+                            <small class="float-right text-muted pl-2">40 min ago</small>
+                            <div class="media">
+                                <div class="avatar-md bg-soft-primary">                                                    
+                                    <i data-feather="users" class="align-self-center icon-xs"></i>
+                                </div>
+                                <div class="media-body align-self-center ml-2 text-truncate">
+                                    <h6 class="my-0 font-weight-normal text-dark">UX 3 Task complete.</h6>
+                                    <small class="text-muted mb-0">Dummy text of the printing.</small>
+                                </div><!--end media-body-->
+                            </div><!--end media-->
+                        </a><!--end-item-->
+                        <!-- item-->
+                        <a href="#" class="dropdown-item py-3">
+                            <small class="float-right text-muted pl-2">1 hr ago</small>
+                            <div class="media">
+                                <div class="avatar-md bg-soft-primary">
+                                    <img src="dastone/images/users/user-5.jpg" alt="" class="thumb-sm rounded-circle">
+                                </div>
+                                <div class="media-body align-self-center ml-2 text-truncate">
+                                    <h6 class="my-0 font-weight-normal text-dark">Your order is placed</h6>
+                                    <small class="text-muted mb-0">It is a long established fact that a reader.</small>
+                                </div><!--end media-body-->
+                            </div><!--end media-->
+                        </a><!--end-item-->
+                        <!-- item-->
+                        <a href="#" class="dropdown-item py-3">
+                            <small class="float-right text-muted pl-2">2 hrs ago</small>
+                            <div class="media">
+                                <div class="avatar-md bg-soft-primary">
+                                    <i data-feather="check-circle" class="align-self-center icon-xs"></i>
+                                </div>
+                                <div class="media-body align-self-center ml-2 text-truncate">
+                                    <h6 class="my-0 font-weight-normal text-dark">Payment Successfull</h6>
+                                    <small class="text-muted mb-0">Dummy text of the printing.</small>
+                                </div><!--end media-body-->
+                            </div><!--end media-->
+                        </a><!--end-item-->
+                    </div>
+                    <!-- All-->
+                    <a href="javascript:void(0);" class="dropdown-item text-center text-primary">
+                        View all <i class="fi-arrow-right"></i>
+                    </a>
+                </div>
+            </li>--}}
+
+            <li class="dropdown">
+                <a class="nav-link dropdown-toggle waves-effect waves-light nav-user" data-toggle="dropdown" href="#" role="button"
+                    aria-haspopup="false" aria-expanded="false">
+                    <span class="ml-1 nav-user-name hidden-sm">{{Auth::user()->name}}</span>
+                    <img src="logo/avator.jpg" alt="profile-user" class="rounded-circle thumb-xs" />                                 
+                </a>
+                <div class="dropdown-menu dropdown-menu-right">
+                    {{-- <a class="dropdown-item" href="#"><i data-feather="user" class="align-self-center icon-xs icon-dual mr-1"></i> Profile</a>
+                    <a class="dropdown-item" href="#"><i data-feather="settings" class="align-self-center icon-xs icon-dual mr-1"></i> Settings</a> --}}
+                    <div class="dropdown-divider mb-0"></div>
+                    <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                        <i data-feather="power" class="align-self-center icon-xs icon-dual mr-1"></i> 
+                        Logout
+                    </a>
+                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                        @csrf
+                    </form> 
+                </div>
             </li>
-            <!--/ Notifications Dropdown End -->
-            <!--================================-->
-            <!-- Messages Dropdown Start -->
-            <!--================================-->
-            <li class="list-inline-item dropdown hidden-xs">
-               <a class=" message-icon" href="" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-               <i data-feather="message-square" class="wd-20"></i>
-               <span class="messages-count wave in"></span>
-               </a>
-               <div class="dropdown-menu dropdown-menu-right">
-                  <div class="top-message-area">
-                     <div class="top-message-heading">
-                        <div class="heading-title">
-                           <h6>Messages</h6>
-                        </div>
-                        <span>5+ New Messages</span>
-                     </div>
-                     <div class="message-box" id="messageBox">
-                        <a class="dropdown-item list-group-item" href="javascript:void(0)">
-                           <div class="d-flex justify-content-between">
-                              <div class="pd-r-10">
-                                 <span class="avatar avatar-online">
-                                 <img src="assets/images/users-face/1.png" class="img-fluid" alt="">
-                                 <i></i>
-                                 </span>
-                              </div>
-                              <div>
-                                 <span class="tx-semibold">Mary Adams</span>
-                                 <span class="small tx-gray-500 ft-right">Mar 20, 22:21pm</span>
-                                 <div class="tx-gray-700">Congratulate! Socrates Itumayfor work anniversaries</div>
-                              </div>
-                           </div>
-                        </a>
-                        <a class="dropdown-item list-group-item" href="javascript:void(0)">
-                           <div class="d-flex justify-content-between">
-                              <div class="pd-r-10">
-                                 <span class="avatar avatar-online">
-                                 <img src="assets/images/users-face/2.png" class="img-fluid" alt="">
-                                 <i></i>
-                                 </span>
-                              </div>
-                              <div>
-                                 <span class="tx-semibold">Richards Caleb</span>
-                                 <span class="small tx-gray-500 ft-right">Mar 2, 22:21pm</span>
-                                 <div class="tx-gray-700">Richards Caleb, just created a new blog post</div>
-                              </div>
-                           </div>
-                        </a>
-                        <a class="dropdown-item list-group-item" href="javascript:void(0)">
-                           <div class="d-flex justify-content-between">
-                              <div class="pd-r-10">
-                                 <span class="avatar avatar-busy">
-                                 <img src="assets/images/users-face/3.png" class="img-fluid" alt="">
-                                 <i></i>
-                                 </span>
-                              </div>
-                              <div>
-                                 <span class="tx-semibold">Lane Richards</span>
-                                 <span class="small tx-gray-500 ft-right">Mar 12, 22:21pm</span>
-                                 <div class="tx-gray-700">Richards Caleb, just created a new blog post</div>
-                              </div>
-                           </div>
-                        </a>
-                        <a class="dropdown-item list-group-item" href="javascript:void(0)">
-                           <div class="d-flex justify-content-between">
-                              <div class="pd-r-10">
-                                 <span class="avatar avatar-busy">
-                                 <img src="assets/images/users-face/4.png" class="img-fluid" alt="">
-                                 <i></i>
-                                 </span>
-                              </div>
-                              <div>
-                                 <span class="tx-semibold">Edward Lane</span>
-                                 <span class="small tx-gray-500 ft-right">Mar 15, 02:21pm</span>
-                                 <div class="tx-gray-700">Adrian Monino, added new comment on your photo</div>
-                              </div>
-                           </div>
-                        </a>
-                        <a class="dropdown-item list-group-item" href="javascript:void(0)">
-                           <div class="d-flex justify-content-between">
-                              <div class="pd-r-10">
-                                 <span class="avatar avatar-offline">
-                                 <img src="assets/images/users-face/5.png" class="img-fluid" alt="">
-                                 <i></i>
-                                 </span>
-                              </div>
-                              <div>
-                                 <span class="tx-semibold">Lane Richards</span>
-                                 <span class="small tx-gray-500 ft-right">Mar 20, 08:28pm</span>
-                                 <div class="tx-gray-700">Edward Lane, added new comment on your photo</div>
-                              </div>
-                           </div>
-                        </a>
-                        <a class="dropdown-item list-group-item" href="javascript:void(0)">
-                           <div class="d-flex justify-content-between">
-                              <div class="pd-r-10">
-                                 <span class="avatar avatar-offline">
-                                 <img src="assets/images/users-face/6.png" class="img-fluid" alt="">
-                                 <i></i>
-                                 </span>
-                              </div>
-                              <div>
-                                 <span class="tx-semibold">Edward Lane</span>
-                                 <span class="small tx-gray-500 ft-right">Mar 21, 22:21pm</span>
-                                 <div class="tx-gray-700">Edward Lane, just created a new blog post</div>
-                              </div>
-                           </div>
-                        </a>
-                     </div>
-                     <div class="top-message-footer">
-                        <a href="">View all Messages</a>
-                     </div>
-                  </div>
-               </div>
-            </li>
-            <!--/ Messages Dropdown End -->
-            <!--================================-->
-            @endif
-            <!-- Profile Dropdown Start -->
-            <!--================================-->            
-            <li class="list-inline-item dropdown">
-               <a  href="" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-               <img src="{{$baseurl}}/avesta/images/users-face/1.png" class="img-fluid wd-30 ht-30 rounded-circle" alt="">
-               </a>
-               <div class="dropdown-menu dropdown-menu-right dropdown-profile">
-                  <div class="user-profile-area">
-                     <div class="user-profile-heading">
-                        <div class="profile-thumbnail">
-                           <img src="{{$baseurl}}/avesta/images/users-face/1.png" class="img-fluid wd-35 ht-35 rounded-circle" alt="">
-                        </div>
-                        <div class="profile-text">
-                           <h6>Himanshu Sharma</h6>
-                           <span>{{Auth::user()->email}}</span>
-                        </div>
-                     </div>
-                     <a href="" class="dropdown-item"><i data-feather="user" class="wd-16 mr-2"></i> My profile</a>
-                     <a href="" class="dropdown-item"><i data-feather="message-square" class="wd-16 mr-2"></i> Messages</a>
-                     <a href="" class="dropdown-item"><i data-feather="settings" class="wd-16 mr-2"></i> Settings</a>
-                     <a href="" class="dropdown-item"><i data-feather="activity" class="wd-16 mr-2"></i> My Activity</a>
-                     <a href="" class="dropdown-item"><i data-feather="download" class="wd-16 mr-2"></i> My Download</a>
-                     <a href="" class="dropdown-item"><i data-feather="life-buoy" class="wd-16 mr-2"></i> Support</a>
-                     <a href="aut-logign-register.html" class="dropdown-item"><i data-feather="power" class="wd-16 mr-2"></i> Sign-out</a>
-                  </div>
-               </div>
-            </li>
-            <!-- Profile Dropdown End -->
-         </ul>
-      </div>
-      <!--/ Header Right End -->
-   </nav>
+        </ul><!--end topbar-nav-->
+
+        <ul class="list-unstyled topbar-nav mb-0">                        
+            <li>
+                <button class="nav-link button-menu-mobile">
+                    <i data-feather="menu" class="align-self-center topbar-icon"></i>
+                </button>
+            </li> 
+        </ul>
+    </nav>
+    <!-- end navbar-->
 </div>
-<!--/ Page Header End -->
+<!-- Top Bar End -->
 
 
 <script type="text/javascript">
@@ -318,7 +151,17 @@ $user=Auth::user();
  var _topbar = {};
 
  
+function toggleTheme(sidebar,theme)
+{
 
+    root_url = window.location.href.split('?')[0];
+    if(theme=='light'){
+        window.location.href=root_url+'?theme='+sidebar;
+    }else{
+        window.location.href=root_url+'?darktheme&theme='+sidebar;
+    }
+
+};
 
 
 </script>

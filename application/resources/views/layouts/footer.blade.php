@@ -19,7 +19,7 @@
             <!-- Column -->
             <div class="column is-4">
                 <div class="pt-10 pb-10">
-                    <img class="small-footer-logo" src="{{ asset('assets/img/logos/bulkit-logo-g.png')}}" alt="">
+                    <img class="" style="margin-left: -20px;height: 70px !important;" src="logo/logo.png" alt="">
                     <div class="footer-description">
                         OnlineStore is Built for Users who want to sell their products online. It's a modular approach to get more customers from anywhere.
                     </div>

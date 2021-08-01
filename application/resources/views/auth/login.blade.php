@@ -3,12 +3,12 @@
 <div class="login-wrapper columns is-gapless">
 
     <!-- Form section -->
-    <div class="column is-7">
+    <div class="column is-12">
         <div class="hero is-fullheight">
             <!-- Header -->
             <div class="hero-heading">
                 <div class="auth-logo">
-                    <a href="/"><img class="top-logo switcher-logo" src="assets/img/logos/logo/bulkit-core.svg" alt=""></a>
+                    <a href="/"><img class="top-logo " style="height: 80px; margin-top: 20px;"src="logo/logo.png" alt=""></a>
                 </div>
             </div>
 
@@ -17,7 +17,7 @@
                 <div class="container">
                     <div class="columns">
                         <div class="column"></div>
-                        <div class="column is-5">
+                        <div class="column ">
 
                             <div class="auth-content">
                                 <h2>Welcome Back.</h2>
@@ -97,7 +97,7 @@
     </div>
 
     <!-- Image section (hidden on mobile) -->
-    <div class="column login-column is-5 is-hidden-mobile hero-banner">
+    {{-- <div class="column login-column is-5 is-hidden-mobile hero-banner">
         <div class="hero is-fullheight is-theme-primary is-relative">
             <div class="columns has-text-centered">
                 <div class="column">
@@ -114,7 +114,7 @@
             </div>
             <img class="login-city" src="assets/img/graphics/compositions/city.svg" alt="">
         </div>
-    </div>
+    </div> --}}
 
 </div>
 @include('layouts.footer')

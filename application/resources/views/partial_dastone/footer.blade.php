@@ -110,17 +110,7 @@ $baseurl=url('/');
  -->
 
         <script>
-        @if(isset($starter_id))
-        window.onload = function(){
-
-          @if($starter_id == 'app_dashboard')
-            $("#{{$starter_id}}").click();
-          @elseif($starter_id == 'jobs')
-            kstych_menu_action('jobs');
-          @endif
-
-        };
-        @endif
+        menuaction('dashboard');
 
         </script>
 

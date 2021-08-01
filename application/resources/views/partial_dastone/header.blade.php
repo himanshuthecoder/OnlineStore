@@ -156,6 +156,6 @@ if($dark_global_theme){$theme="-dark";$body_background='#25293a';};
         </style>
     </head>
 
-    <body class="{{$sidebar}}" data-layout="vertical">
+    <body class="{{$sidebar}}" data-layout="horizontal">
 
 
